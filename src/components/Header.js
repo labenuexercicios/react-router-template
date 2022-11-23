@@ -1,12 +1,20 @@
+import { useNavigate } from "react-router-dom";
+import { goToHome, goToLogin, goToProfile } from "../routes/coordinator";
+
 function Header() {
+
+  const navigate = useNavigate()
 
   return (
     <header>
-      <button >
+      <button onClick={() => goToHome(navigate)}>
         Ir para página inicial
       </button>
-      <button >
+      <button onClick={() => goToProfile(navigate)}>
         Ir para página de perfil
+      </button>
+      <button onClick={() => goToLogin(navigate)}>
+        Fazer Login
       </button>
     </header>
   );

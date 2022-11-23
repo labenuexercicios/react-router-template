@@ -1,8 +1,12 @@
+import { Router } from "./routes/Routes"
+
 function App() {
   return (
     <div>
+
       <h1>Aula de React Router</h1>
-      {/* crie as rotas aqui */}
+      <Router/>
+
     </div>
   )
 }
