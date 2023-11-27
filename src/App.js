@@ -1,11 +1,12 @@
-import { MainContainer } from "./style"
+import Router from './components/routes/Router';
+
 
 
 function App() {
   return (
-    <MainContainer>
-      <h1>Aula de React Router</h1>
-    </MainContainer>
+   
+
+    <Router />
   )
 }
 
